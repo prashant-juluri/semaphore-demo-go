@@ -1,0 +1,29 @@
+---
+application:
+  name: "semaphore-demo-go"
+  project: "test-project"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "biggie"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/biggie"
+databases:
+- type: "MONGODB"
+  name: "dbname"
+  version: "3.6"
+- type: "MYSQL"
+  name: "bigge"
+  version: "8.0"
+- type: "POSTGRESQL"
+  name: "snnsnns"
+  version: "11"
+- type: "REDIS"
+  name: "smmsmms"
+  version: "6"
+routers:
+- name: "main-semaphore-demo-go"
+  routes:
+  - application_name: "semaphore-demo-go"
+    paths:
+    - "/*"
